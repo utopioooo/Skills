@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "c10bdd9c-f921-4098-abc0-e8528a6efa3c",
+  "path": "tech-doc-style-chinese",
+  "path_key": "tech-doc-style-chinese",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Fenng/Tech-Doc-Style-Chinese",
+    "subpath": null,
+    "branch": null
+  }
+}
