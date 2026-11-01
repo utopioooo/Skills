@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "b3502909-e44f-4558-b0c2-ed44ccbc8632",
+  "path": "understand-explain",
+  "path_key": "understand-explain",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "egonex-ai/understand-anything/understand-explain",
+    "subpath": "understand-anything-plugin\\skills\\understand-explain",
+    "branch": null
+  }
+}

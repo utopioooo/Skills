@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "2530abb9-5f6d-4447-8d91-17b438fbddb3",
+  "path": "understand-onboard",
+  "path_key": "understand-onboard",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "egonex-ai/understand-anything/understand-onboard",
+    "subpath": "understand-anything-plugin\\skills\\understand-onboard",
+    "branch": null
+  }
+}

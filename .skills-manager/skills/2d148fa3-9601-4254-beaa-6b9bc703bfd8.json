@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "2d148fa3-9601-4254-beaa-6b9bc703bfd8",
+  "path": "understand-diff",
+  "path_key": "understand-diff",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "egonex-ai/understand-anything/understand-diff",
+    "subpath": "understand-anything-plugin\\skills\\understand-diff",
+    "branch": null
+  }
+}

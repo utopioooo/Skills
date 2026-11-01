@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "3f14cd75-513d-4bb4-b456-9b96863f940d",
+  "path": "understand-domain",
+  "path_key": "understand-domain",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "egonex-ai/understand-anything/understand-domain",
+    "subpath": "understand-anything-plugin\\skills\\understand-domain",
+    "branch": null
+  }
+}

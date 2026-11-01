@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "7cfd2da4-7629-472f-82e2-bf610f2f602e",
+  "path": "understand-dashboard",
+  "path_key": "understand-dashboard",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "skillssh",
+    "ref": "egonex-ai/understand-anything/understand-dashboard",
+    "subpath": "understand-anything-plugin\\skills\\understand-dashboard",
+    "branch": null
+  }
+}
