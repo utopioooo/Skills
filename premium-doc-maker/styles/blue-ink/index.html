@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《{{COURSE}}》课程目录</title>
+    <meta name="description" content="{{SUBTITLE_ATTR}}">
+    <style>
+{{STYLE_CSS}}
+    </style>
+    <script>
+    /* 首屏防闪烁：必须在首次绘制前确定主题 */
+    (function () {
+        var t;
+        try { t = localStorage.getItem('doc-theme'); } catch (e) {}
+        if (!t) {
+            t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+                ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+    })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="index-header">
+            <svg class="course-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5s-6 4.5-6 10c0 2 1 4 1 4s-1.5 2-1.5 3.5h13c0-1.5-1.5-3.5-1.5-3.5s1-2 1-4c0-5.5-6-10-6-10zm0 3c1.2 1.8 3 4.2 3 7 0 1.5-.7 2.8-1.3 3.8h-3.4C9.7 15.3 9 14 9 12.5c0-2.8 1.8-5.2 3-7zM9.5 18.5h5c.2.4.3.8.3 1.2H9.2c0-.4.1-.8.3-1.2z"/></svg>
+            <h1>{{COURSE}}</h1>
+            <p class="subtitle">{{SUBTITLE}}</p>
+            <p class="kicker">共 {{TOTAL}} 讲 · {{BRAND}}</p>
+        </header>
+
+        <section class="directory-intro">
+            <h2>课程说明</h2>
+            <p>本课程共 {{TOTAL}} 讲。每讲由若干小节组成，配有可运行代码、对比表与手写 SVG 图；建议按顺序学习，也可以从下方目录直接跳到需要的主题。</p>
+        </section>
+
+{{STAGE_GROUPS}}
+
+        <footer>
+            <p class="footer-brand">{{BRAND}} · {{SLOGAN}}</p>
+            <p class="footer-author">作者：{{AUTHOR}}</p>
+            <p>《{{COURSE}}》课程 · 共 {{TOTAL}} 讲 · {{YEAR}}</p>
+        </footer>
+    </div>
+
+    <div class="fab-menu" role="toolbar" aria-label="页面工具">
+        <button class="fab-btn" id="theme-toggle" type="button" title="切换浅色/深色" aria-label="切换浅色/深色">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.5h-2V3h2V1zm7.45 3.95l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 14.4l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-9 9.5h2v-2h-2v2zm-7.45-3.95l1.41 1.41 1.79-1.79-1.41-1.41-1.79 1.79zM12 6a6 6 0 100 12 6 6 0 000-12z"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 01-4.4 2.26 5.4 5.4 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+        </button>
+        <button class="fab-btn" id="back-to-top" type="button" title="回到顶部" aria-label="回到顶部">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z"/></svg>
+        </button>
+    </div>
+
+    <script>
+    (function () {
+        var root = document.documentElement;
+        var toggle = document.getElementById('theme-toggle');
+        if (toggle) {
+            toggle.setAttribute('aria-pressed', String(root.getAttribute('data-theme') === 'dark'));
+            toggle.addEventListener('click', function () {
+                var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                root.setAttribute('data-theme', next);
+                toggle.setAttribute('aria-pressed', String(next === 'dark'));
+                try { localStorage.setItem('doc-theme', next); } catch (e) {}
+            });
+        }
+        var top = document.getElementById('back-to-top');
+        if (top) {
+            top.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

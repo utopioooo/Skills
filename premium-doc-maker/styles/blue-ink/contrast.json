@@ -1,0 +1,25 @@
+{
+  "description": "关键文字/控件与背景的最低对比度契约，validate.py --style-only 会逐项计算。",
+  "pairs": [
+    { "fg": "--text", "bg": "--surface", "min": 7.0, "label": "正文/卡片" },
+    { "fg": "--text", "bg": "--bg", "min": 7.0, "label": "正文/页面底" },
+    { "fg": "--text-mute", "bg": "--surface", "min": 4.5, "label": "次要文字" },
+    { "fg": "--link", "bg": "--surface", "min": 4.5, "label": "链接" },
+    { "fg": "--accent", "bg": "--surface", "min": 4.5, "label": "h2/h3 强调色" },
+    { "fg": "--on-header", "bg": "--header-a", "min": 4.5, "label": "头图文字/渐变起点" },
+    { "fg": "--on-header", "bg": "--header-b", "min": 4.5, "label": "头图文字/渐变终点" },
+    { "fg": "--on-accent", "bg": "--accent", "min": 4.5, "label": "卡片按钮文字" },
+    { "fg": "--on-accent", "bg": "--accent-2", "min": 3.0, "label": "悬浮按钮图标" },
+    { "fg": "--text-mute", "bg": "--bg", "min": 4.5, "label": "次要文字/页面底" },
+    { "fg": "--link", "bg": "--bg", "min": 4.5, "label": "链接/页面底" },
+    { "fg": "--text", "bg": "--tip-bg", "min": 7.0, "label": "正文/提示框" },
+    { "fg": "--text", "bg": "--warn-bg", "min": 7.0, "label": "正文/警告框" },
+    { "fg": "--text", "bg": "--key-bg", "min": 7.0, "label": "正文/要点框" },
+    { "fg": "--th-text", "bg": "--th-bg", "min": 4.5, "label": "表头" },
+    { "fg": "--code-text", "bg": "--code-bg", "min": 4.5, "label": "代码" },
+    { "fg": "--footer-text", "bg": "--footer-bg", "min": 4.5, "label": "页脚" },
+    { "fg": "--badge-ink", "bg": "--badge-bg", "min": 4.5, "label": "徽章 1" },
+    { "fg": "--badge-2-ink", "bg": "--badge-2-bg", "min": 4.5, "label": "徽章 2" },
+    { "fg": "--badge-3-ink", "bg": "--badge-3-bg", "min": 4.5, "label": "徽章 3" }
+  ]
+}

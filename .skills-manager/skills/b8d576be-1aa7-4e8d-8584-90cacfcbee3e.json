@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "b8d576be-1aa7-4e8d-8584-90cacfcbee3e",
+  "path": "premium-doc-maker",
+  "path_key": "premium-doc-maker",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

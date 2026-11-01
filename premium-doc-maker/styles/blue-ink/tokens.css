@@ -1,0 +1,121 @@
+/* ============================================================================
+   Style pack: blue-ink / tokens.css
+   ----------------------------------------------------------------------------
+   本文件是这套风格唯一的颜色与尺度事实源。
+   规则：
+     1. 组件只允许 background:var(--xxx) 这类引用，禁止任何裸色值；
+     2. 两套主题必须定义同一组令牌（键集合完全一致）；
+     3. 切换主题只覆盖令牌，不改组件样式；
+     4. 插图（SVG）内部用字面量 hex，不引用这些令牌。
+   新增令牌时，:root 与 html[data-theme="dark"] 必须同时补，validate.py 会校验。
+   ========================================================================== */
+:root {
+    color-scheme: light;
+
+    /* 基底 */
+    --bg:           #F0F7FF;
+    --surface:      #FFFFFF;
+    --surface-2:    #F5F9FF;
+    --text:         #1F2D3D;
+    --text-mute:    #5A6B7C;
+    --border:       #D8EAF9;
+
+    /* 强调色（均需与 surface 达到正文对比度） */
+    --accent:       #2F6FB3;
+    --accent-2:     #4A90E2;
+    --link:         #1565C0;
+    --on-accent:    #FFFFFF;
+
+    /* 头图 */
+    --header-a:     #1C5A9E;
+    --header-b:     #2F6FB3;
+    --on-header:    #FFFFFF;
+
+    /* 表格 */
+    --th-bg:        #E3F2FD;
+    --th-text:      #0D47A1;
+    --row-hover:    #F5F9FF;
+    --row-zebra:    #FAFCFF;
+
+    /* 代码 */
+    --code-bg:      #F5F9FF;
+    --code-text:    #1F2D3D;
+
+    /* 提示类 */
+    --tip-bg:       #FFF7E6;
+    --warn-bg:      #FFEAEA;
+    --warn-border:  #C62828;
+    --key-bg:       #EAF3FC;
+    --key-border:   #2F6FB3;
+
+    /* 页脚 */
+    --footer-bg:    #143D66;
+    --footer-text:  #EAF2FB;
+
+    /* 徽章（复杂度 / 标签） */
+    --badge-bg:     #E6F4EA;
+    --badge-ink:    #1B5E20;
+    --badge-2-bg:   #FFF1DC;
+    --badge-2-ink:  #8A4B00;
+    --badge-3-bg:   #E7F0FB;
+    --badge-3-ink:  #0D47A1;
+
+    /* 尺度 */
+    --radius:       12px;
+    --radius-sm:    8px;
+    --shadow:       0 8px 20px rgba(16, 58, 102, .10);
+    --shadow-hover: 0 14px 30px rgba(16, 58, 102, .18);
+    --focus:        #0D47A1;
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+
+    --bg:           #0E0E0E;
+    --surface:      #1A1A1A;
+    --surface-2:    #141414;
+    --text:         #E8E4DC;
+    --text-mute:    #B3ACA3;
+    --border:       #3A322A;
+
+    --accent:       #FF9A2E;
+    --accent-2:     #FFB259;
+    --link:         #FFB259;
+    --on-accent:    #141414;
+
+    --header-a:     #FF8A00;
+    --header-b:     #FFB259;
+    --on-header:    #141414;
+
+    --th-bg:        #2A2118;
+    --th-text:      #FFC078;
+    --row-hover:    #24201A;
+    --row-zebra:    #1E1B17;
+
+    --code-bg:      #141414;
+    --code-text:    #E8E4DC;
+
+    --tip-bg:       #241E16;
+    --warn-bg:      #2A1616;
+    --warn-border:  #FF6B6B;
+    --key-bg:       #2A2118;
+    --key-border:   #FF9A2E;
+
+    --footer-bg:    #16130F;
+    --footer-text:  #E8E4DC;
+
+    --badge-bg:     #1E2B1E;
+    --badge-ink:    #A5D6A7;
+    --badge-2-bg:   #2E2318;
+    --badge-2-ink:  #FFC078;
+    --badge-3-bg:   #182433;
+    --badge-3-ink:  #9CC7F5;
+
+    --shadow:       0 8px 20px rgba(0, 0, 0, .55);
+    --shadow-hover: 0 14px 30px rgba(0, 0, 0, .70);
+    --focus:        #FFB259;
+
+    /* 尺度与主题无关，但为满足“两套主题令牌键完全一致”的契约，在此同步声明 */
+    --radius:       12px;
+    --radius-sm:    8px;
+}
