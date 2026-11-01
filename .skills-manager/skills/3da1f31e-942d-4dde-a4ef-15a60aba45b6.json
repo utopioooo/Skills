@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "3da1f31e-942d-4dde-a4ef-15a60aba45b6",
+  "path": "rea-changelog-update",
+  "path_key": "rea-changelog-update",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/morluto/rea",
+    "subpath": ".agents\\skills\\rea-changelog-update",
+    "branch": null
+  }
+}

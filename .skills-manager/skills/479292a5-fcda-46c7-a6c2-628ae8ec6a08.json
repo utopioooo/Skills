@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "479292a5-fcda-46c7-a6c2-628ae8ec6a08",
+  "path": "rea-ci-tests-audit",
+  "path_key": "rea-ci-tests-audit",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/morluto/rea",
+    "subpath": ".agents\\skills\\rea-ci-tests-audit",
+    "branch": null
+  }
+}

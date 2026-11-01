@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "c89c9ac9-882d-4392-acdf-fa676f90c5c2",
+  "path": "rea-analysis-optimization",
+  "path_key": "rea-analysis-optimization",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/morluto/rea",
+    "subpath": ".agents\\skills\\rea-analysis-optimization",
+    "branch": null
+  }
+}
